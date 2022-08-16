@@ -476,14 +476,16 @@ section .no-padding {
     letter-spacing: 0.03em;
     font-family: inherit;
     position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button.primary:hover, 
 .button.primary:focus {
     background-color: var(--accent-color);
     color: #fff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .button.secondary {
     border-radius: 4px;
     padding: 10 px 32 px;
@@ -634,6 +636,7 @@ section .no-padding {
     padding-top: 0;
     width: 370;
     background-color: #fff;
+    transition: box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
